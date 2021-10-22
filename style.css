@@ -23,7 +23,7 @@ body{
 main {
     background-color: #fff;
     width: 70%;
-    height:100%vh;
+    height:100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
