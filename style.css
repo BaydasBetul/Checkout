@@ -221,6 +221,7 @@ span {
     
 main {
     max-width: 400px;
+    height: auto;
 }
 
 input, select {
@@ -246,6 +247,7 @@ label {
 .formcontrol{
     display: flex;
     flex-direction: column;
+    max-width: 400px;
 }
 #country-posta {
     display: flex;
