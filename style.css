@@ -239,13 +239,12 @@ h2 {
 
 label {
     margin-top: 10px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: rgb(66, 66, 66);
 }
-.formcontrol{
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
+#formcontrol{
+    margin: 30px 10px 30px 30px;
+    width: 370px;
 }
 #country-posta {
     display: flex;
@@ -253,11 +252,12 @@ label {
 }
 
 #postacode {
+    width: 370px;
     margin-left: 0px;
 }
 
 #postacode input{
-    width:210px;
+    width: 210px;
     margin-left: 0px;
 }
 #postacode-label {
@@ -275,7 +275,7 @@ label {
 
 #button-submit{
     float: none;
-    margin-left: 180px;
+    margin-left: 170px;
     color: white;
     height: 40px;
     width: 80px;
