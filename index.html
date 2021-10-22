@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0-11/css/all.css"
+        integrity="sha512-xO/VZFNBvip9IT+BD6Nq/pHdBvKeFcwygKqARlegjQ+5A68KsMSYrPbGP1oYow5ec9Tqq8peJXcn5J1bD4O00w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout</title>
+
+</head>
+
+<body>
+
+    <head>
+        <h1 id="title">Checkout</h1>
+    </head>
+    <main>
+
+        <form action="result.html" method="get" id="form">
+
+            <div class="formcontrol" id="form-contact">
+                <h2>Contact information</h2>
+
+                <div class="labelcontent">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-index">
+
+                    <input type="email" name="Email" id="email" placeholder="Enter your email.." required>
+                    <i class="fas fa-envelope fa-1x"></i>
+                </div>
+                <br>
+
+                <div class="labelcontent">
+                    <label for="phone">Phone</label>
+                </div>
+
+                <div class="input-index">
+                    <input type="tel" name="Phone" id="phone" placeholder="Enter your phone..." required>
+                    <i class="fas fa-phone-square-alt fa-1x"></i>
+                </div>
+                <br>
+
+            </div>
+
+            <div class="formcontrol">
+
+                <h2>Shipping address</h2>
+
+                <div class="labelcontent">
+                    <label for="fullname">Full name</label>
+                </div>
+
+                <div class="input-index">
+                    <input type="text" name="Full Name" id="fullname" placeholder="Enter your full name..." required>
+                    <i class="fas fa-user fa-1x"></i>
+                </div><br>
+
+                <div class="labelcontent">
+                    <label for="adress">Address</label>
+                </div>
+
+                <div class="input-index">
+                    <input type="text" name="Adress" id="adress" placeholder="Enter your adress..." required>
+                    <i class="fas fa-home fa-1x"></i>
+                </div><br>
+
+                <div class="labelcontent">
+                    <label for="city">City</label>
+                </div>
+
+                <div class="input-index">
+                    <input type="text" name="City" id="city" placeholder="Enter your city..." required>
+                    <i class="fas fa-city fa-1x"></i>
+                </div><br>
+
+            </div>
+
+
+
+            <div id="country-posta">
+
+                <div>
+                    <label for="country">Country</label><br>
+                    <div class="input-index">
+                        <select name="Country" id="country" requierd>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkey">Germany</option>
+                            <option value="Turkey">USA</option>
+                            <option value="Turkey">Canada</option>
+                            <option value="Turkey">UK</option>
+                        </select>
+                        <i class="fas fa-globe-europe fa-1x"></i>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="postCode" id="postacode-label">Post Code</label><br>
+                    <div class="input-index" id="postacode">
+                        <input type="text" name="PostCode" id="postaCode" placeholder="Enter your postal code..."
+                            required>
+                        <i class="fas fa-mail-bulk fa-1x"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="checkbox">
+                <input type="checkbox" name="Info" id="information">
+                <label for="information">See this information next time</label>
+            </div>
+
+        </form>
+
+
+        <div class="probox">
+
+            <div class="product">
+
+                <img src="img/photo1.png" alt="VintageBackbag">
+
+                <div class="product__info">
+
+                    <h4>Vintage Backbag</h4>
+
+                    <p><strong>$54.99</strong><span class="asilfiyat">$94.99</span></p>
+
+                    <div class="butonplusminus">
+
+                        <button>
+                            <i class="fas fa-minus fa-1x" aria-hidden="true"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus fa-1x" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product">
+                <img src="img/photo2.png" alt="VintageBackbag">
+                <div class="product__info">
+                    <h4>Levi Shoes</h4>
+                    <p><strong>$74.99</strong><span class="asilfiyat">$124.99</span></p>
+                    <div class="butonplusminus">
+                        <button>
+                            <i class="fas fa-minus fa-1x" aria-hidden="true"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus fa-1x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shipping">
+
+                <div class="kaufen">
+                    <p>Shipping</p>
+                    <p id="total">$19</p>
+                </div>
+                <div class="kaufen">
+                    <p>Total</p>
+                    <p id="total">$148.98</p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <div>
+        <button id="button-submit" type="submit">Continue</button>
+    </div>
+</body>
+
+</html>
+
+<!--.formcontrol .labelcontent {
+    margin: 10px 0;
+}
+
+.formcontrol .labelcontent label{
+    font-size: 0.9rem;
+    color: #4f4f4f;
+    margin: 10px 0;
+    display: block;
+    position: relative;
+    /*display: flex;
+    flex-direction: column;*/
+
+
+.formcontrol .labelcontent .input-index {
+    position: relative;
+}   
+.formcontrol .labelcontent .input-index input{
+    width: 100%;
+    color: #828282;
+    font-size: 1.2rem;
+    border: 1px solid #828282;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px 5px 10px 40px;
+}
+
+.formcontrol .labelcontent .input-index i{
+    position: absolute;
+    color: #828282;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#shipping {
+    margin-top: 50px;
+}
+
+#countryselect{
+    display: inline-block;
+    margin-right: 2%;   
+}
+#postal-code-index{
+    display: inline-block;
+    width: auto;
+}
+
+
+
+
+-->

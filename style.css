@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Mon;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+body{
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title{
+text-align: center;
+margin: 20px 0;
+}
+
+main {
+    background-color: #fff;
+    width: 70%;
+    height:100%vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    text-align: left;
+    /*display:grid;
+    grid-template-columns: 60% 40%;
+    transform: translateX(120px,-50%);
+    -webkit-transform: translateX(120px,-50%);
+    -moz-transform: translateX(120px,-50%);
+    -ms-transform: translateX(120px,-50%);
+    -o-transform: translateX(120px,-50%); */
+}
+
+form{
+width: 50%;
+margin-right: 100px;
+}
+
+input, select {
+    color: rgb(61, 61, 61);
+    margin-top: 5px;
+    width: 380px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid rgb(130, 130, 130);
+    }
+
+h2 {
+ font-size: 1.4rem;
+ color: #333;
+ margin: 10px 0;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: rgb(66, 66, 66);
+}
+
+#checkbox{
+    margin-right: 10px;
+    display: flex;
+    flex-flow: row
+}
+#checkbox label{
+    margin-top: 15px;
+}
+
+#information {
+    width: 15px;
+    margin-right: 10px;
+}
+
+#country-posta {
+    display: flex;
+    flex-direction: row;
+}
+
+#postacode {
+    margin-left: 50px;
+}
+#postacode input{
+    width:210px;
+}
+#postacode-label {
+    position: relative;
+    left: 50px;
+}
+#country {
+    width: 120px;
+}
+
+.input-index input, .input-index select{
+    padding-left: 30px;
+}
+
+.input-index {
+    position: relative;
+}
+
+.input-index i{
+    position: absolute;
+    left: 0;
+    top: 5px;
+    padding: 9px 8px;
+    color: rgb(141, 138, 138);
+}
+
+.probox {
+    background-color: rgb(243, 239, 239);
+    width: 40%;
+    height: auto;
+    min-width: 400px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-top: 15px;
+}
+
+.product{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+img{
+    width:150px;
+    height:170px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.product_info{
+    margin: 3px;
+}
+
+h4{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: rgb(85, 85, 85);
+}
+strong{
+    color: orange;
+}
+span {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    margin-left: 6px;
+}
+
+.butonplusminus{
+    border: 1px solid rgb(131, 131, 131);
+    width: 100px;
+    margin-top: 40px;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.butonplusminus button {
+    border: none;
+    width: 18px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #cecaca;
+}
+
+.butonplusminus p {
+    margin-top: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#shipping{
+    margin: 60px 20px 20px 20px;
+}
+
+.kaufen{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    border-top: 1px solid rgb(168, 168, 168);
+    padding-top: 4px;
+}
+
+
+#button-submit{
+    margin: 4rem ;
+    background-color: rgb(255, 153, 0);
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+}
+
+#shipping p {
+    flex-basis: 50%;
+}
+
+#total {
+    text-align: right;
+}
+
+
+@media screen and (max-width:768px) {
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        flex-flow:column-reverse;
+    }
+
+    
+}
