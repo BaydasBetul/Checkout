@@ -2,53 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-@font-face{
-    font-family: Mon;
-    src: url('fonts/Montserrat-Regular.ttf');
+    font-family: Mon, Arial, Helvetica, sans-serif;
 }
 
-body{
-    font-family: Mon, Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 #title{
+    font-weight: bold;
     text-align: center;
-    margin: 20px 0;
+    margin: 15px 0 30px;
 }
-
 main {
-    background-color: #fff;
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    text-align: left;
-    /*display:grid;
-    grid-template-columns: 60% 40%;
-    transform: translateX(120px,-50%);
-    -webkit-transform: translateX(120px,-50%);
-    -moz-transform: translateX(120px,-50%);
-    -ms-transform: translateX(120px,-50%);
-    -o-transform: translateX(120px,-50%); */
+    display: grid;
+    grid-template-columns: 450px 370px;
+    justify-content: center;   
 }
 
-form{
-    width: 50%;
-    margin-right: 100px;
+section{
+    display: grid;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+form {    
+    position: relative;
+    width: 80%;
+    display: block;
 }
 
 input, select {
     color: rgb(61, 61, 61);
     margin-top: 5px;
-    width: 380px;
+    width: 372px;
     height: 32px;
     border-radius: 5px;
     border: 1px solid rgb(130, 130, 130);
+    padding-left: 35px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -58,18 +48,21 @@ h2 {
 }
 
 label {
-    margin-top: 10px;
+    margin: 8px auto;
     font-size: 0.7rem;
     color: rgb(66, 66, 66);
 }
 
-#checkbox{
-    margin-right: 10px;
-    display: flex;
-    flex-flow: row
+#checkbox input{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 15px;  
 }
 #checkbox label{
-    margin-top: 15px;
+    display: inline-block;
+    font-size: 12px;
+    align-items: baseline; 
 }
 
 #information {
@@ -112,28 +105,12 @@ label {
     color: rgb(141, 138, 138);
 }
 
-.probox {
-    background-color: rgb(243, 239, 239);
-    width: 40%;
-    height: auto;
-    min-width: 400px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    padding-top: 15px;
-    margin-right: ;
-}
-
 .product{
-    width: 50%;
     display: flex;
     flex-direction: row;
-
 }
 
-img{
+section img{
     width:150px;
     height:170px;
     border-radius: 10px;
@@ -196,15 +173,19 @@ span {
 }
 
 
-#button-submit{
+footer button{
     margin: 4rem ;
     background-color: rgb(255, 153, 0);
     color: white;
-    height: 40px;
+    height: 45px;
     width: 80px;
     border-radius: 5px;
     font-weight: 700;
     border: none;
+    display: block;
+    align-items: baseline;
+    margin: 30px auto 0;
+    
 }
 
 #shipping p {
@@ -215,73 +196,18 @@ span {
     text-align: right;
 }
 
--------------------------------------------------------------------
 @media screen and (max-width:692px) {
-    
-main {
-    flex-direction: column;
-}
+    main, footer{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    input{
+        width: 320px;       
+    }
 
-input, select {
-    color: rgb(61, 61, 61);
-    margin-top: 5px;
-    width: 370px;
-    height: 32px;
-    border-radius: 5px;
-    border: 1px solid rgb(130, 130, 130);
-}
-
-h2 {
-    font-size: 1.4rem;
-    color: #333;
-    margin: 10px 0;
-}
-
-label {
-    margin-top: 10px;
-    font-size: 0.8rem;
-    color: rgb(66, 66, 66);
-}
-#formcontrol{
-    margin: 30px 10px 30px 30px;
-    width: 370px;
-}
-#country-posta {
-    display: flex;
-    flex-direction: column;
-}
-
-#postacode {
-    width: 370px;
-    margin-left: 0px;
-}
-
-#postacode input{
-    width: 210px;
-    margin-left: 0px;
-}
-#postacode-label {
-    position: relative;
-    left: 0px;
-}
-
-.input-index i{
-    position: absolute;
-    left: 0;
-    top: 5px;
-    padding: 9px 8px;
-    color: rgb(141, 138, 138);
-}
-
-#button-submit{
-    float: none;
-    margin-left: 170px;
-    color: white;
-    height: 40px;
-    width: 80px;
-    border-radius: 5px;
-    font-weight: 700;
-    border: none;
-}
-
+    section{
+        margin-left:-100px;
+        margin-bottom: 30px;
+    }
 }

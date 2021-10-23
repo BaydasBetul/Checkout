@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0-11/css/all.css"
         integrity="sha512-xO/VZFNBvip9IT+BD6Nq/pHdBvKeFcwygKqARlegjQ+5A68KsMSYrPbGP1oYow5ec9Tqq8peJXcn5J1bD4O00w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,9 +19,9 @@
 
 <body>
 
-    <head>
+    <header>
         <h1 id="title">Checkout</h1>
-    </head>
+    </header>
     <main>
 
         <form action="result.html" method="get" id="form">
@@ -118,70 +119,76 @@
 
         </form>
 
+        <section>
+            <div class="probox">
 
-        <div class="probox">
+                <div class="product">
 
-            <div class="product">
+                    <img src="img/photo1.png" alt="VintageBackbag">
 
-                <img src="img/photo1.png" alt="VintageBackbag">
+                    <div class="product__info">
 
-                <div class="product__info">
+                        <h4>Vintage Backbag</h4>
 
-                    <h4>Vintage Backbag</h4>
+                        <p><strong>$54.99</strong><span class="asilfiyat">$94.99</span></p>
 
-                    <p><strong>$54.99</strong><span class="asilfiyat">$94.99</span></p>
+                        <div class="butonplusminus">
 
-                    <div class="butonplusminus">
+                            <button>
+                                <i class="fas fa-minus fa-1x" aria-hidden="true"></i>
+                            </button>
+                            <p>1</p>
+                            <button>
+                                <i class="fas fa-plus fa-1x" aria-hidden="true"></i>
+                            </button>
 
-                        <button>
-                            <i class="fas fa-minus fa-1x" aria-hidden="true"></i>
-                        </button>
-                        <p>1</p>
-                        <button>
-                            <i class="fas fa-plus fa-1x" aria-hidden="true"></i>
-                        </button>
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
-
-            <div class="product">
-                <img src="img/photo2.png" alt="VintageBackbag">
-                <div class="product__info">
-                    <h4>Levi Shoes</h4>
-                    <p><strong>$74.99</strong><span class="asilfiyat">$124.99</span></p>
-                    <div class="butonplusminus">
-                        <button>
-                            <i class="fas fa-minus fa-1x" aria-hidden="true"></i>
-                        </button>
-                        <p>1</p>
-                        <button>
-                            <i class="fas fa-plus fa-1x" aria-hidden="true"></i>
-                        </button>
+                <div class="product">
+                    <img src="img/photo2.png" alt="VintageBackbag">
+                    <div class="product__info">
+                        <h4>Levi Shoes</h4>
+                        <p><strong>$74.99</strong><span class="asilfiyat">$124.99</span></p>
+                        <div class="butonplusminus">
+                            <button>
+                                <i class="fas fa-minus fa-1x" aria-hidden="true"></i>
+                            </button>
+                            <p>1</p>
+                            <button>
+                                <i class="fas fa-plus fa-1x" aria-hidden="true"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="shipping">
+                <div id="shipping">
 
-                <div class="kaufen">
-                    <p>Shipping</p>
-                    <p id="total">$19</p>
+                    <div class="kaufen">
+                        <p>Shipping</p>
+                        <p id="total">$19</p>
+                    </div>
+                    <div class="kaufen">
+                        <p>Total</p>
+                        <p id="total">$148.98</p>
+                    </div>
                 </div>
-                <div class="kaufen">
-                    <p>Total</p>
-                    <p id="total">$148.98</p>
-                </div>
+
+
             </div>
+        </section>
 
 
-        </div>
     </main>
-    <div>
-        <button id="button-submit" type="submit">Continue</button>
-    </div>
+
+    <footer>
+        <div>
+            <button id="button-submit" type="submit">Continue</button>
+        </div>
+    </footer>
 </body>
 
 </html>
