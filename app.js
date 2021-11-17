@@ -76,31 +76,6 @@ const calculateTotal = () => {
 
 }
 
-// document.querySelectorAll(".remove-product").forEach((removeButton) => {
-//     removeButton.addEventListener("click", () => {
-//         removeProduct(removeButton);
-//     });
-// });
-
-// const removeProduct = (removeButton) => {
-//     let productDiv = removeButton.parentElement.parentElement.parentElement;
-//     productDiv.remove();
-//     calculateTotal();
-// }
-
-// document.querySelectorAll(".add-product").forEach((addButton) => {
-//     addButton.addEventListener("click", () => {
-//         addProduct(addButton);
-//     });
-// });
-
-// const addProduct = (addButton) => {
-//     let productDivadd = addButton.parentElement.parentElement.parentElement;
-//     productDivadd.add();
-//     calculateTotal();
-// }
-
-
 
 let removeCartBtn = document.getElementsByClassName('remove-product');
 //console.log(removeCartBtn);
@@ -123,3 +98,5 @@ for (let i = 0; i < addCartBtn.length; i++) {
         calculateTotal();
     });
 }
+
+// add butonu henüz eklenemedi....remove tam calismiyor o sebeple..
